@@ -1,2 +1,3 @@
-# rl4ob
-Reinforcement Learning for Optimizations in Biomechanics
+# Reinforcement Learning for Optimizations in Biomechanics
+
+This repository contains ...
