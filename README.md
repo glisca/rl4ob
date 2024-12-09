@@ -132,21 +132,21 @@ Type in `no` and press enter, because in the future you will initialize anaconda
 
 You are done with installing Anaconda3.
 
-## 4. `ob-rl-ai` conda environment
+## 4. `rl4ob` conda environment
 
 4.1 Clone the `athlete` (this repository) repository inside the `src` directory.
 
 ```
 cd $WS_BIOMEC/src/ && \
-git clone git@gitlab.lrz.de:glisca/ob-rl-ai.git
+git clone git@github.com:glisca/rl4ob.git
 ```
 
-4.2 Create the `ob-rl-ai` conda environment (and automatically install the required dependencies).
+4.2 Create the `rl4ob` conda environment (and automatically install the required dependencies).
 
-&rarr; Run the following command and feel free to grab yourself a coffee. Probably it will take anaconda more tha 5 minutes (depending on your internet speed) to to download and install all packages which the about to be installed `ob-rl-ai` conda evironment needs.
+&rarr; Run the following command and feel free to grab yourself a coffee. Probably it will take anaconda more tha 5 minutes (depending on your internet speed) to to download and install all packages which the about to be installed `rl4ob` conda evironment needs.
 
 ```
-$WS_BIOMEC/install/a202406/bin/conda env create -f $WS_BIOMEC/src/ob-rl-ai/conda/ob-rl-ai.yml
+$WS_BIOMEC/install/a202406/bin/conda env create -f $WS_BIOMEC/src/rl4ob/conda/rl4ob.yml
 ```
 
 A message similar to the following:
@@ -156,24 +156,24 @@ done
 #
 # To activate this environment, use
 #
-#     $ conda activate ob-rl-ai
+#     $ conda activate rl4ob
 #
 #     $ conda deactivate
 
 Retrieving notices: ...working... done
 ```
-confirms that your new `ob-rl-ai` conda environment was successfully installed.
+confirms that your new `rl4ob` conda environment was successfully installed.
 
-4.3 Activate manually the `ob-rl-ai` conda environment.
+4.3 Activate manually the `rl4ob` conda environment.
 
 ```
-source ~/biomec/install/a202406/bin/activate ob-rl-ai
+source ~/biomec/install/a202406/bin/activate rl4ob
 ```
 
 ## 4. Install the MuJoCo's system dependencies
 
 ```
-cd $WS_BIOMEC/src/ob-rl-ai && \
+cd $WS_BIOMEC/src/rl4ob && \
 sudo bash setup.sh
 ```
 
